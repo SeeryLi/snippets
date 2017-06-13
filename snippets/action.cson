@@ -1,0 +1,8 @@
+".source.js, .source.jsx, .source.ts":
+  "for action":
+    prefix: "com"
+    body: '''
+      $1({ commit }, $2) {
+        commit(types.$3, $2)
+      },
+    '''
